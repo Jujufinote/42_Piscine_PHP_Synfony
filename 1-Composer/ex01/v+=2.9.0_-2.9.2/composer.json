@@ -1,0 +1,10 @@
+{
+    "name": "jverdier/v2.9.0-2.9.2",
+    "description": "a monolog version",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "monolog/monolog": ">=2.9.0 <2.9.2"
+    }
+}

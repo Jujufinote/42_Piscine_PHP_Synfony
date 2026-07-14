@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block title %}
+Home
+{% endblock %}
+{% block article %}
+<ul>
+	<li><a href="{{ path('article_show', {'article': 'cat'}) }}">Link to cat</a></li>
+	<li><a href="{{ path('article_show', {'article': 'dog'}) }}">Link to dog</a></li>
+	<li><a href="{{ path('article_show', {'article': 'seagull'}) }}">Link to seagull</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,8 @@
+{
+    "name": "jverdier/ex00",
+    "description": "initialisation of an application",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {}
+}

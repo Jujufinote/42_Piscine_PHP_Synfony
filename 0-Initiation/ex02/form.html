@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="popup.js" defer></script>
+		<style>
+			label {
+				display: block;
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section>
+				<h1>Formulaire :</h1>
+				<form action="" method="post" autocomplete="off">
+					<label>Firstname : <input type="text" id="firstname" name="firstname"></label>
+
+					<label>Name : <input type="text" id="name" name="name"></label>
+
+					<label>Age : <input type="number" id="age" name="age" min="0" max="120" step="1"></label>
+
+					<label>Phone : <input type="tel" id="phone" name="tel" pattern="[0-9]{10}"></label>
+
+					<label>Email : <input type="email" id="email" name="email"></label>
+
+					<label>Student at 42 : <input type="checkbox" id="student" name="student"></label>
+
+					<p>
+						Gender : 
+						<label><input type="radio" id="gender_male" name="genre" value="Male">Male</label>
+						<label><input type="radio" id="gender_female" name="genre" value="Female">Female</label>
+						<label><input type="radio" id="gender_other" name="genre" value="Other">Other</label>
+					</p>
+
+					<button type="button" onclick="displayFormContents();">Submit</button>
+					<!-- usually we put type=submit but it reloads and we cant see the result of the function -->
+					<!-- html verification is done after refreshing by the submit button -->
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
